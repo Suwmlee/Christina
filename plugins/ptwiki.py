@@ -12,9 +12,9 @@ async def send_help(event) -> None:
         "[PT入门指南](https://cowtransfer.com/s/d25f43470d6f40) \n"
         "[M-Team Wiki](https://wiki.m-team.cc/index.php?title=%E9%A6%96%E9%A0%81) \n"
         "[M-Team 封禁查询](https://pt.m-team.cc/userban.php?action=list) \n"
-        "#### 常见问题 \n"
-        "- Could not connect to tracker/无法连接tracker服务器/黄种 \n"
-        "  与tracker服务器连接不稳定,原因很多,解决方法：1.等待下次更新恢复;2.强制重新汇报;3.改善网络环境",
+        "**常见问题** \n"
+        "1.Could not connect to tracker/无法连接tracker服务器/黄种 \n"
+        "  与tracker服务器连接不稳定,原因很多,解决方法：1)等待下次更新恢复;2)强制重新汇报;3)改善网络环境",
         link_preview=False
     )
 
