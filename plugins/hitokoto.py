@@ -21,9 +21,6 @@ async def get_hitokoto():
             ret = 'Hitokoto No:' + str(result['id']) + '\n' + result['hitokoto'] + '\n' + '—— by ' + result['creator']
             if 'from' in result and result['from'] != '' and result['from'] != result['creator']:
                 ret = ret + ' (' + result['from'] + ')'
-            # else:
-            #     print(result['from'])
-            # print(ret)
     except:
         pass
     return ret
