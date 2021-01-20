@@ -1,6 +1,6 @@
 # !/bin/usr
 
-deamo='python userbot.py'
+deamo='userbot.py'
 for pid in `ps -ef|grep $deamo|awk '{print $2}'`
 do
     echo $pid
