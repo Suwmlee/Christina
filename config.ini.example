@@ -1,0 +1,10 @@
+[<name of userbot>]
+# api token
+api_id = <api_id>
+api_hash = <api_hash>
+[<name of bot>]
+# bot token
+token = <bot token>
+[<name of bot>]
+# bot token
+token = <bot token>
