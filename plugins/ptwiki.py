@@ -8,8 +8,11 @@ from telethon import events, hints
 async def send_help(event) -> None:
     """send /pthelp command help."""
     help_message = await event.reply(
-        " [PT入门指南](https://cowtransfer.com/s/d25f43470d6f40) \n"
-        " [M-Team Wiki](https://wiki.m-team.cc/index.php?title=%E9%A6%96%E9%A0%81)"
+        "在提问题前，请先阅读PT入门指南与wiki \n"
+        "[PT入门指南](https://cowtransfer.com/s/d25f43470d6f40) \n"
+        "[M-Team Wiki](https://wiki.m-team.cc/index.php?title=%E9%A6%96%E9%A0%81) \n",
+        "[M-Team 封禁查询](https://pt.m-team.cc/userban.php?action=list)",
+        link_preview=False
     )
 
 
