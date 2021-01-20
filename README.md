@@ -2,8 +2,9 @@
 
 用法：
 - Hitokoto回复 
+- PTWiki
 
-主机器人，可以控制一个 userbot 和任意数量的普通 bot。只需要编辑配置文件 __config.ini__ ：
+主机器人，可以控制一个 userbot 和任意数量的普通 bot。只需要编辑配置文件 __config.ini__:
 
 ```ini
 [<name of userbot>]
@@ -15,5 +16,6 @@ token = <bot token>
 token = <bot token>
 ```
 
-```python userbot.py``` 验证,第一次运行需要验证token/接收验证码
-```python userbot.py >christina.log &``` 后台运行
+```python userbot.py``` 验证(第一次运行需要验证token/接收验证码)
+
+```nohup python userbot.py > christina.log 2>&1 &```后台运行
