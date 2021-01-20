@@ -15,4 +15,5 @@ token = <bot token>
 token = <bot token>
 ```
 
-执行 __python userbot.py__ 即可。
+```python userbot.py``` 验证,第一次运行需要验证token/接收验证码
+```python userbot.py >christina.log &``` 后台运行
