@@ -33,6 +33,8 @@ async def send_hitokoto(
     retmsg = await get_hitokoto()
     if not retmsg:
         return
+    # logger.info(get_display_name(channel))
+    # logger.info(channel.id)
     hitokoto_message = await userbot.send_message(channel, retmsg)
 
 
