@@ -18,11 +18,11 @@ Could not connect to tracker/无法连接tracker服务器/黄种
     help_site = ""
     if channel.id == 1051902747:
         # m-team
-        help_site = """\n[**M-Team Wiki <-点这里**](https://wiki.m-team.cc/index.php?title=%E9%A6%96%E9%A0%81) 
-[**M-Team 封禁查询**](https://pt.m-team.cc/userban.php?action=list)
-[**M-Team 24小时自助注册**](https://pt.m-team.cc/pay.php)
-[**M-Team 多电脑上传/下载**](https://wiki.m-team.cc/index.php?title=%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%8F%B0%E9%9B%BB%E8%85%A6%E7%99%BB%E5%85%A5%E6%88%96%E9%80%B2%E8%A1%8C%E4%B8%8A%E5%82%B3/%E4%B8%8B%E8%BC%89%E5%97%8E%EF%BC%9F)
-[**M-Team 保号说明**]https://wiki.m-team.cc/index.php?title=%E5%B8%B3%E8%99%9F%E4%BF%9D%E7%95%99%E8%A6%8F%E5%89%87) \n"""
+        help_site = """\n**[M-Team Wiki <-点这里**](https://wiki.m-team.cc/index.php?title=%E9%A6%96%E9%A0%81)**
+**[M-Team 封禁查询](https://pt.m-team.cc/userban.php?action=list)**
+**[M-Team 24小时自助注册](https://pt.m-team.cc/pay.php)**
+**[M-Team 多电脑上传/下载](https://wiki.m-team.cc/index.php?title=%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%8F%B0%E9%9B%BB%E8%85%A6%E7%99%BB%E5%85%A5%E6%88%96%E9%80%B2%E8%A1%8C%E4%B8%8A%E5%82%B3/%E4%B8%8B%E8%BC%89%E5%97%8E%EF%BC%9F)**
+**[M-Team 保号说明](https://wiki.m-team.cc/index.php?title=%E5%B8%B3%E8%99%9F%E4%BF%9D%E7%95%99%E8%A6%8F%E5%89%87)** \n"""
     elif channel.id == 1542127638:
         # t-bot 
         help_site = ""
