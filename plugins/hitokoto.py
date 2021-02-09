@@ -18,7 +18,7 @@ async def get_hitokoto():
         res = requests.get(hiturl, headers=headers)
         if res.status_code == 200:
             result = json.loads(res.text)
-            ret = 'Hitokoto No:' + str(result['id']) + '\n' + result['hitokoto'] + '\n' + '—— by ' + result['from']
+            ret = 'Hitokoto No:' + str(result['id']) + '\n' + result['hitokoto'] + '\n' + '—— from ' + result['from']
             # if 'from' in result and result['from'] != '' and result['from'] != result['creator']:
             #     ret = ret + ' (' + result['from'] + ')'
     except:
