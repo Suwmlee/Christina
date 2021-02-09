@@ -12,10 +12,10 @@ async def send_help(
     help_top = """**PT入门资料(内含常见问题解答):**
 [PT指南和教程](https://github.com/Suwmlee/Christina/files/5840869/PT.pdf)  [从零开始玩PT_V1.0_2](https://github.com/Suwmlee/Christina/files/5840885/PT_V1.0_2.pdf)
 **进阶**
-[必备浏览器插件PTPP](https://github.com/ronggang/PT-Plugin-Plus)
-[IYUU自动辅种工具--最简配置(含群辉等设置)](https://www.iyuu.cn/archives/324/)
-[flexget自动过滤优惠种子(free等)](https://github.com/Juszoe/flexget-nexusphp)
-[自动删种](https://autoremove-torrents.readthedocs.io/zh_CN/latest/)
+[必备浏览器插件  PTPP](https://github.com/ronggang/PT-Plugin-Plus)
+[IYUU自动辅种工具  最简配置(含群辉等设置)](https://www.iyuu.cn/archives/324/)
+[flexget+nexusphp  自动过滤优惠种子(free等)](https://github.com/Juszoe/flexget-nexusphp)
+[autoremove-torrents  自动删种](https://autoremove-torrents.readthedocs.io/zh_CN/latest/)
 [盒子入门(仅参考)](https://yukino.nl/2019/08/10/pt-tools/)
 
 """
