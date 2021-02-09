@@ -42,6 +42,8 @@ async def send_help(
     await asyncio.sleep(60)
     try:
         await help_message.delete()
+    except:
+        logger.info("删除消息失败")
 
 
 @userbot.on(events.NewMessage(pattern="/pthelp"))
