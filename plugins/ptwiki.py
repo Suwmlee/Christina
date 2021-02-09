@@ -57,4 +57,8 @@ async def generate_ptwiki_from_event(event) -> None:
     _, *rest = msg.text.lower().split(" ")
 
     if not rest:
+        try:
+            await msg.delete()
+        except:
+            pass
         await send_help(to_chat, event)
