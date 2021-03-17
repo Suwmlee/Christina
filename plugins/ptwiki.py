@@ -11,11 +11,12 @@ async def send_help(
         event) -> None:
     """send /pthelp command help."""
     help_top = """**PT入门资料(内含常见问题解答):**
-[PT指南和教程](https://github.com/Suwmlee/Christina/files/5840869/PT.pdf)  [从零开始玩PT_V1.0_2](https://github.com/Suwmlee/Christina/files/5840885/PT_V1.0_2.pdf)
-[PT种子搬运助手(一键转种)](https://greasyfork.org/zh-CN/scripts/402942-pt%E7%A7%8D%E5%AD%90%E6%90%AC%E8%BF%90%E5%8A%A9%E6%89%8B)
-`转种直接使用原站的种子文件,不要修改文件名`
-**进阶**
+[PT指南和教程](https://github.com/Suwmlee/Christina/files/5840869/PT.pdf)
+[从零开始玩PT_V1.0_2](https://github.com/Suwmlee/Christina/files/5840885/PT_V1.0_2.pdf)
 [必备浏览器插件  PT助手(PTPP)](https://github.com/ronggang/PT-Plugin-Plus)
+[PT种子搬运助手  一键转种](https://greasyfork.org/zh-CN/scripts/402942-pt%E7%A7%8D%E5%AD%90%E6%90%AC%E8%BF%90%E5%8A%A9%E6%89%8B)
+`注意：转种直接使用原站的种子文件,不要修改文件名`
+**进阶**
 [IYUU自动辅种工具  最简配置(含群辉等设置)](https://www.iyuu.cn/archives/324/)
 [flexget+nexusphp  自动订阅/过滤优惠种子(free)等](https://github.com/Juszoe/flexget-nexusphp)
 [autoremove-torrents  自动删种程序](https://autoremove-torrents.readthedocs.io/zh_CN/latest/)
@@ -45,7 +46,7 @@ async def send_help(
 """
     full = help_top + help_site + help_foot
     help_message = await userbot.send_message(channel, full, link_preview=False)
-    await asyncio.sleep(120)
+    await asyncio.sleep(90)
     try:
         await help_message.delete()
     except:
