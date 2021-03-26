@@ -26,7 +26,7 @@ async def sticker(event):
     if (not context.text) or (not context.text.lower().startswith("-add")):
         return
 
-    _, *rest = msg.text.lower().split(" ")
+    _, *rest = context.text.lower().split(" ")
     if rest:
         return
 
