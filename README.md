@@ -1,7 +1,5 @@
 ### Christina 
 
-用法：
-- Hitokoto回复 
 
 主机器人,可以控制一个 userbot 和任意数量的普通 bot.只需要编辑配置文件 __config.ini__ :
 
@@ -22,3 +20,4 @@ token = <bot token>
 #### 致谢
 
 [SteamedFish](https://github.com/SteamedFish/emacs-china-bot)
+[PagerMaid-Modify](https://github.com/Xtao-Labs/PagerMaid-Modify)

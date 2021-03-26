@@ -1,4 +1,4 @@
-""" PagerMaid module to handle sticker collection. """
+#!/usr/bin/env python3
 
 import certifi
 import ssl

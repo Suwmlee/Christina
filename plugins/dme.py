@@ -1,10 +1,11 @@
-""" Module to automate message deletion. """
+#!/usr/bin/env python3
+
 from asyncio import sleep
 from os import path, remove, getcwd
 from telethon import events, hints
 
 
-@userbot.on(events.NewMessage(pattern="-dme"))
+@userbot.on(events.NewMessage(pattern="-run"))
 async def dme_from_event(event) -> None:
     """dme based on event."""
     msg = event.message
@@ -14,7 +15,7 @@ async def dme_from_event(event) -> None:
     if me.id != user.id:
         return
 
-    if (not msg.text) or (not msg.text.lower().startswith("-dme")):
+    if (not msg.text) or (not msg.text.lower().startswith("-run")):
         return
 
     to_chat = await event.get_chat()
