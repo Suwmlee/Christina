@@ -43,12 +43,8 @@ async def dme(context,
         channel = await userbot.get_entity(channel)
 
     async for message in userbot.iter_messages(channel, from_user=from_user):
-        # if message.from_user.id == context.from_user.id:
         if count_buffer == count:
             break
-        # if message.forward_from or message.via_bot or message.sticker or message.contact \
-        #         or message.poll or message.game or message.location:
-        #     pass
         if message.text or message.voice:
             if not message.text == dme_msg:
                 try:
@@ -56,10 +52,6 @@ async def dme(context,
                 except:
                     pass
         elif message.document or message.photo or message.audio or message.video or message.gif:
-            # if target_file:
-            #     if not message.text == dme_msg:
-            #         await message.edit(dme_msg)
-            # else:
             if not message.text == dme_msg:
                 try:
                     await message.edit(dme_msg)
