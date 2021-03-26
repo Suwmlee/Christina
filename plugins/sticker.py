@@ -137,8 +137,8 @@ async def sticker(event):
                         while chat_response.text == "Whoa! That's probably enough stickers for one pack, give it a break. \
 A pack can't have more than 120 stickers at the moment.":
                             pack += 1
-                            pack_name = f"{user.username}_{pack}"
-                            pack_title = f"@{user.username} 的私藏 ({pack})"
+                            pack_name = f"tg_matches_{pack}"
+                            pack_title = f"water~water~ {pack}"
                             try:
                                 await context.edit("切换到私藏 " + str(pack) + " 上一个贴纸包已满 . . .")
                             except:
