@@ -16,10 +16,11 @@ async def dme_from_event(event) -> None:
     if (not msg.text) or (not msg.text.lower().startswith("-dme")):
         return
     
-    await dme(msg)
+    to_chat = await event.get_chat()
+    await dme(msg, to_chat)
 
 
-async def dme(context):
+async def dme(context, channel):
     """ Deletes specific amount of messages you sent. """
     try:
         count = int(context.text.split()[1]) + 1
@@ -31,7 +32,13 @@ async def dme(context):
         return
     dme_msg = " _(:з」∠)_ "
     count_buffer = 0
-    async for message in userbot.iter_history(context.chat.id):
+
+    if isinstance(channel, str):
+        # 转换成 entity 才能有更多方法
+        # 不然不能使用 utils.get_display_name(channel)
+        channel = await userbot.get_entity(channel)
+    
+    async for message in channel.iter_history(context.chat.id):
         if message.from_user.id == context.from_user.id:
             if count_buffer == count:
                 break
