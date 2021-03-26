@@ -18,11 +18,12 @@ async def dme_from_event(event) -> None:
         return
 
     to_chat = await event.get_chat()
-    await dme(msg, to_chat)
+    await dme(msg, to_chat, me)
 
 
 async def dme(context,
-              channel: hints.EntityLike
+              channel: hints.EntityLike,
+              from_user: hints.EntityLike
               ) -> None:
     """ Deletes specific amount of messages you sent. """
     try:
@@ -41,14 +42,14 @@ async def dme(context,
         # 不然不能使用 utils.get_display_name(channel)
         channel = await userbot.get_entity(channel)
 
-    async for message in userbot.iter_messages(channel, from_user=context.from_user):
+    async for message in userbot.iter_messages(channel, from_user=from_user):
         # if message.from_user.id == context.from_user.id:
         if count_buffer == count:
             break
-        if message.forward_from or message.via_bot or message.sticker or message.contact \
-                or message.poll or message.game or message.location:
-            pass
-        elif message.text or message.voice:
+        # if message.forward_from or message.via_bot or message.sticker or message.contact \
+        #         or message.poll or message.game or message.location:
+        #     pass
+        if message.text or message.voice:
             if not message.text == dme_msg:
                 try:
                     await message.edit(dme_msg)
