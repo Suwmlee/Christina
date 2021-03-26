@@ -33,14 +33,14 @@ async def send_help(
     if channel.id == 1051902747:
         # m-team
         help_site = """**[M-Team Wiki <-点这里](https://wiki.m-team.cc/index.php?title=%E9%A6%96%E9%A0%81)**
-**[M-Team 封禁查询](https://pt.m-team.cc/userban.php?action=list)**
+**[M-Team 封禁查询](https://kp.m-team.cc/userban.php?action=list)**
 **[M-Team 盒子及獨立主機特別說明](https://wiki.m-team.cc/index.php?title=%E7%9B%92%E5%AD%90%E5%8F%8A%E7%8D%A8%E7%AB%8B%E4%B8%BB%E6%A9%9F%E7%89%B9%E5%88%A5%E8%AA%AA%E6%98%8E)**
 **[M-Team 可以使用多台電腦登入或進行上傳/下載嗎？](https://wiki.m-team.cc/index.php?title=%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%8F%B0%E9%9B%BB%E8%85%A6%E7%99%BB%E5%85%A5%E6%88%96%E9%80%B2%E8%A1%8C%E4%B8%8A%E5%82%B3/%E4%B8%8B%E8%BC%89%E5%97%8E%EF%BC%9F)**
 """
     elif channel.id == 1542127638:
         # t-bot 
         help_site = """**[M-Team Wiki <-点这里](https://wiki.m-team.cc/index.php?title=%E9%A6%96%E9%A0%81)**
-**[M-Team 封禁查询](https://pt.m-team.cc/userban.php?action=list)**
+**[M-Team 封禁查询](https://kp.m-team.cc/userban.php?action=list)**
 **[M-Team 盒子及獨立主機特別說明](https://wiki.m-team.cc/index.php?title=%E7%9B%92%E5%AD%90%E5%8F%8A%E7%8D%A8%E7%AB%8B%E4%B8%BB%E6%A9%9F%E7%89%B9%E5%88%A5%E8%AA%AA%E6%98%8E)**
 **[M-Team 可以使用多台電腦登入或進行上傳/下載嗎？](https://wiki.m-team.cc/index.php?title=%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%8F%B0%E9%9B%BB%E8%85%A6%E7%99%BB%E5%85%A5%E6%88%96%E9%80%B2%E8%A1%8C%E4%B8%8A%E5%82%B3/%E4%B8%8B%E8%BC%89%E5%97%8E%EF%BC%9F)**
 """
