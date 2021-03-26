@@ -96,8 +96,8 @@ async def sticker(event):
             else:
                 emoji = split_strings[1]
 
-        pack_name = f"{user.username}_{pack}"
-        pack_title = f"@{user.username} 的私藏 ({pack})"
+        pack_name = "tg_matches"
+        pack_title = "water~water~"
         command = '/newpack'
         file = BytesIO()
 
