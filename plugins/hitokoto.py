@@ -49,6 +49,10 @@ async def generate_hitokoto_from_event(event) -> None:
     _, *rest = msg.text.lower().split(" ")
 
     if not rest:
+        try:
+            await msg.delete()
+        except:
+            pass
         await send_hitokoto(to_chat, event)
 
 
