@@ -2,9 +2,11 @@
 
 import asyncio
 import json
+import datetime
 
 from telethon import events, hints
 
+records = dict()
 
 async def send_help(
         channel: hints.EntityLike,
@@ -60,6 +62,16 @@ async def generate_ptwiki_from_event(event) -> None:
     if (not msg.text) or (not msg.text.lower().startswith("/pthelp")):
         return
     to_chat = await event.get_chat()
+
+    nowtime = datetime.datetime.now()
+    channelid = str(to_chat.id)
+    if channelid in records:
+        lasttime = records[channelid]
+        delta = nowtime - lasttime
+        if delta.total_seconds() < 80:
+            return
+    else:
+        records[channelid] = nowtime
 
     _, *rest = msg.text.lower().split(" ")
 
