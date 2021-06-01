@@ -21,9 +21,11 @@ async def send_help(
 `转载种子时，不要修改文件名`
 **进阶**
 [IYUU自动辅种工具  最简配置(含群辉等设置)](https://www.iyuu.cn/archives/324/)
+[cross-seed     基于Jackett辅种工具](https://github.com/mmgoodnow/cross-seed)
 [flexget+nexusphp  自动订阅/过滤优惠种子(free)等](https://github.com/Juszoe/flexget-nexusphp)
 [autoremove-torrents  自动删种程序](https://autoremove-torrents.readthedocs.io/zh_CN/latest/)
 [盒子入门(仅参考)](https://yukino.nl/2019/08/10/pt-tools/)
+[Aniverse wiki(含PT限盒等统计)](https://github.com/Aniverse/wiki)
 
 """
     help_foot = ""
@@ -77,6 +79,7 @@ async def generate_ptwiki_from_event(event) -> None:
                 delta = nowtime - lasttime
                 if delta.total_seconds() < 80:
                     return
+                records[channelid] = nowtime
             else:
                 records[channelid] = nowtime
 
