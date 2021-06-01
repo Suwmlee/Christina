@@ -16,13 +16,13 @@ async def send_help(
 [PT指南和教程](https://github.com/Suwmlee/Christina/files/5840869/PT.pdf)
 [从零开始玩PT_V1.0_2](https://github.com/Suwmlee/Christina/files/5840885/PT_V1.0_2.pdf)
 [必备浏览器插件  PT助手(PTPP)](https://github.com/ronggang/PT-Plugin-Plus)
-[转载种子脚本    easy-seed](https://github.com/techmovie/easy-seed)
+[转载种子脚本     easy-seed](https://github.com/techmovie/easy-seed)
 [种子文件修改器](https://github.com/torrent-file-editor/torrent-file-editor)
 `转载种子时，不要修改文件名`
 **进阶**
-[IYUU自动辅种工具  最简配置(含群辉等设置)](https://www.iyuu.cn/archives/324/)
-[cross-seed     基于Jackett辅种工具](https://github.com/mmgoodnow/cross-seed)
-[flexget+nexusphp  自动订阅/过滤优惠种子(free)等](https://github.com/Juszoe/flexget-nexusphp)
+[IYUU自动辅种工具       最简配置(含群辉等设置)](https://www.iyuu.cn/archives/324/)
+[cross-seed                    基于Jackett辅种工具](https://github.com/mmgoodnow/cross-seed)
+[flexget+nexusphp       自动订阅/过滤优惠种子(free)等](https://github.com/Juszoe/flexget-nexusphp)
 [autoremove-torrents  自动删种程序](https://autoremove-torrents.readthedocs.io/zh_CN/latest/)
 [盒子入门(仅参考)](https://yukino.nl/2019/08/10/pt-tools/)
 [Aniverse wiki(含PT限盒等统计)](https://github.com/Aniverse/wiki)
