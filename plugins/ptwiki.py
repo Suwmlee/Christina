@@ -16,9 +16,9 @@ async def send_help(
 [PT指南和教程](https://github.com/Suwmlee/Christina/files/5840869/PT.pdf)
 [从零开始玩PT_V1.0_2](https://github.com/Suwmlee/Christina/files/5840885/PT_V1.0_2.pdf)
 [必备浏览器插件  PT助手(PTPP)](https://github.com/ronggang/PT-Plugin-Plus)
-[转载种子脚本     easy-seed](https://github.com/techmovie/easy-seed)
+[PT一键转种        easy-upload](https://github.com/techmovie/easy-upload)
 [种子文件修改器](https://github.com/torrent-file-editor/torrent-file-editor)
-`转载种子时，不要修改文件名`
+`转种时，请不要修改文件名`
 **进阶**
 [IYUU自动辅种工具       最简配置(含群辉等设置)](https://www.iyuu.cn/archives/324/)
 [cross-seed                    基于Jackett辅种工具](https://github.com/mmgoodnow/cross-seed)
