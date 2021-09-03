@@ -13,8 +13,8 @@ async def send_help(
         event) -> None:
     """send /pthelp command help."""
     help_top = """**PT入门资料(内含常见问题解答):**
-[PT指南和教程](https://github.com/Suwmlee/Christina/files/5840869/PT.pdf)
-[从零开始玩PT_V1.0_2](https://github.com/Suwmlee/Christina/files/5840885/PT_V1.0_2.pdf)
+[PT指南和教程](https://suwmlee.github.io/docs/PT_intro.pdf)
+[从零开始玩PT_V1.0_2](https://suwmlee.github.io/docs/PT_Guide_V1.0_2.pdf)
 [必备浏览器插件  PT助手(PTPP)](https://github.com/ronggang/PT-Plugin-Plus)
 [PT一键转种        easy-upload](https://github.com/techmovie/easy-upload)
 [种子文件修改器](https://github.com/torrent-file-editor/torrent-file-editor)
