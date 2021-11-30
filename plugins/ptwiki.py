@@ -26,8 +26,8 @@ async def send_help(
 [autoremove-torrents  自动删种程序](https://autoremove-torrents.readthedocs.io/zh_CN/latest/)
 [盒子入门(仅参考)](https://yukino.nl/2019/08/10/pt-tools/)
 [Aniverse wiki(含PT限盒等统计)](https://github.com/Aniverse/wiki)
-**压制**
-[Advanced Encoding Guide在线预览(部分翻译)](https://suwmlee.github.io/mdbook-guide/)
+**压制入门/深入**
+[压制指南(在线预览)](https://suwmlee.github.io/mdbook-guide/)
 [旧版 Encoding Guide](https://suwmlee.github.io/docs/AHD_encode_guide.pdf)
 """
     help_foot = ""
