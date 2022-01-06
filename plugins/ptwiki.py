@@ -11,8 +11,8 @@ records = dict()
 async def send_help(
         channel: hints.EntityLike,
         event) -> None:
-    """send /pthelp command help."""
-    help_top = """**PT入门资料(内含常见问题解答):**
+    """send pthelp command help."""
+    help_top = """**PT入门:**
 [PT指南和教程](https://suwmlee.github.io/docs/PT_intro.pdf)
 [从零开始玩PT_V1.0_2](https://suwmlee.github.io/docs/PT_Guide_V1.0_2.pdf)
 [必备浏览器插件  PT助手(PTPP)](https://github.com/ronggang/PT-Plugin-Plus)
@@ -30,7 +30,7 @@ async def send_help(
 [压制指南(在线预览)](https://suwmlee.github.io/encoding-guide/)
 [旧版 Encoding Guide](https://suwmlee.github.io/docs/AHD_encode_guide.pdf)
 """
-    help_foot = ""
+    help_foot = "90s后删除，发送 __pthelp__ 再次查看"
 #     help_foot = """**常见问题**
 # Could not connect to tracker/黄种
 #     `与tracker服务器连接不稳定,没有汇报成功.解决方法:1)等待下次汇报恢复;2)强制重新汇报;3)改善网络环境`
@@ -56,11 +56,11 @@ async def send_help(
         pass
 
 
-@userbot.on(events.NewMessage(pattern="/pthelp"))
+@userbot.on(events.NewMessage(pattern="pthelp"))
 async def generate_ptwiki_from_event(event) -> None:
     """generate pthelp based on event."""
     msg = event.message
-    if (not msg.text) or (not msg.text.lower().startswith("/pthelp")):
+    if (not msg.text) or (not msg.text.lower().startswith("pthelp")):
         return
     to_chat = await event.get_chat()
 
