@@ -29,8 +29,9 @@ async def send_help(
 **压制入门/深入**
 [压制指南(在线预览)](https://suwmlee.github.io/encoding-guide/)
 [旧版 Encoding Guide](https://suwmlee.github.io/docs/AHD_encode_guide.pdf)
+
 """
-    help_foot = "90s后删除，发送 __pthelp__ 再次查看"
+    help_foot = "`90s后删除，发送 pthelp 再次查看`"
 #     help_foot = """**常见问题**
 # Could not connect to tracker/黄种
 #     `与tracker服务器连接不稳定,没有汇报成功.解决方法:1)等待下次汇报恢复;2)强制重新汇报;3)改善网络环境`
@@ -75,7 +76,7 @@ async def generate_ptwiki_from_event(event) -> None:
             if channelid in records:
                 lasttime = records[channelid]
                 delta = nowtime - lasttime
-                if delta.total_seconds() < 80:
+                if delta.total_seconds() < 90:
                     return
                 records[channelid] = nowtime
             else:
